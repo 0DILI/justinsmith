@@ -1,0 +1,48 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+@keyframes mild-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.75; /* Keep it more visible */
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.mild-pulse {
+  animation: mild-pulse 2s ease-in-out infinite;
+}
+
+@font-face {
+  font-family: "Pragmatica Extended";
+  src: url("/fonts/Pragmatica.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.logo {
+  font-family: "Pragmatica Extended", sans-serif;
+}
+
+@font-face {
+  font-family: "Helvetica Neue UltraLight";
+  src: url("/fonts/HelveticaNeueUltraLight.otf") format("opentype");
+  font-weight: 200; /* UltraLight is usually around 200 */
+  font-style: normal;
+}
+
+.helv {
+  font-family: "Helvetica Neue UltraLight", sans-serif;
+}

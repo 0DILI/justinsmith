@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script
+      src="https://kit.fontawesome.com/ebd73b03fd.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="relative min-h-screen overflow-y-auto">
+      <!-- Background Image -->
+      <img
+        id="main-image"
+        src="/Main-View.jpg"
+        alt="Studio"
+        class="w-full h-screen object-cover"
+      />
+
+      <button
+        onclick="changeImage()"
+        aria-label="Toggle Overlay"
+        class="absolute top-[34%] cursor-pointer left-[50%] w-12 h-12 -translate-x-1/2 rounded-full z-20"
+      ></button>
+
+      <!-- Dots -->
+      <!-- Mic -->
+      <a
+        href="https://www.byjustinsmith.com/portfolio-3/project-two-whgpe-yceha"
+        target="_blank"
+        class="absolute top-[66%] left-[50%] transform -translate-x-1/2 -translate-y-1/2"
+      >
+        <span
+          class="w-4 h-4 bg-yellow-400 rounded-full mild-pulse absolute"
+        ></span>
+        <span
+          class="w-2.5 h-2.5 bg-yellow-400 rounded-full relative z-10"
+        ></span>
+      </a>
+
+      <!-- Globe -->
+      <a
+        href="https://www.byjustinsmith.com/portfolio-3/travel"
+        target="_blank"
+        class="absolute top-[50%] left-[91%] transform -translate-x-1/2 -translate-y-1/2"
+      >
+        <span
+          class="w-4 h-4 bg-yellow-400 rounded-full mild-pulse absolute"
+        ></span>
+        <span
+          class="w-2.5 h-2.5 bg-yellow-400 rounded-full relative z-10"
+        ></span>
+      </a>
+
+      <!-- Dress -->
+      <a
+        href="https://www.byjustinsmith.com/portfolio-3/project-one-h346n-nfzfn"
+        target="_blank"
+        class="absolute top-[63%] left-[14%] transform -translate-x-1/2 -translate-y-1/2"
+      >
+        <span
+          class="w-4 h-4 bg-yellow-400 rounded-full mild-pulse absolute"
+        ></span>
+        <span
+          class="w-2.5 h-2.5 bg-yellow-400 rounded-full relative z-10"
+        ></span>
+      </a>
+
+      <!-- Plant -->
+      <a
+        href="https://www.byjustinsmith.com/portfolio-3/project-three-ph2n3-h9shd"
+        target="_blank"
+        class="absolute top-[62%] left-[21%] transform -translate-x-1/2 -translate-y-1/2"
+      >
+        <span
+          class="w-4 h-4 bg-yellow-400 rounded-full mild-pulse absolute"
+        ></span>
+        <span
+          class="w-2.5 h-2.5 bg-yellow-400 rounded-full relative z-10"
+        ></span>
+      </a>
+
+      <!-- Navbar Wrapper -->
+      <nav
+        class="w-full fixed top-0 left-0 z-50 bg-transparent px-16 py-16 flex justify-between items-center text-yellow-400 font-semibold tracking-wide text-sm uppercase"
+      >
+        <!-- Left Logo -->
+        <div class="text-base logo sm:text-lg md:text-xl font-bold">
+          BYJUSTINSMITH
+        </div>
+
+        <div class="flex items-center gap-6">
+          <!-- Center Navigation -->
+          <ul
+            class="hidden md:flex space-x-6 text-sm items-center helv font-light"
+          >
+            <li>
+              <a href="https://www.byjustinsmith.com/" class="hover:opacity-80"
+                >Home</a
+              >
+            </li>
+            <li class="relative">
+              <a href="#" class="hover:opacity-80">Portfolio</a>
+              <!-- underline for active -->
+              <span
+                class="absolute left-0 -bottom-1 w-full h-[2px] bg-yellow-400"
+              ></span>
+            </li>
+            <li>
+              <a
+                href="https://www.byjustinsmith.com/about"
+                class="hover:opacity-80"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.byjustinsmith.com/contact"
+                class="hover:opacity-80"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.byjustinsmith.com/new-page-1"
+                class="hover:opacity-80"
+                >Donate</a
+              >
+            </li>
+
+            <!-- Social Icons -->
+            <li>
+              <a href="#" aria-label="Instagram"
+                ><i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Facebook"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" aria-label="YouTube"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </li>
+          </ul>
+
+          <!-- Right CTA Button -->
+          <div class="hidden md:block">
+            <a
+              href="https://www.byjustinsmith.com/contact"
+              class="border border-[#655A3F] hover:bg-[#655A3F] text-[18px] font-semibold text-[#655A3F] helv rounded-full px-8 py-5 hover:text-white transition duration-300"
+            >
+              Book Now
+            </a>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- Include Font Awesome for icons (you can replace this with lucide or Heroicons if needed) -->
+    <script
+      src="https://kit.fontawesome.com/your-fontawesome-kit.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="/main.js"></script>
+  </body>
+</html>
