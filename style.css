@@ -46,3 +46,19 @@ body {
 .helv {
   font-family: "Helvetica Neue UltraLight", sans-serif;
 }
+
+@media (max-width: 768px) {
+  #scroll-container {
+    width: 200%;
+    height: 200%;
+    overflow: auto;
+  }
+}
+
+.mobile {
+  background: url("./assets/DSC08648.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Ensures it covers full height */
+}
