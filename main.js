@@ -4,9 +4,9 @@ function changeImage() {
   const img = document.getElementById("main-image");
 
   if (!overlayActive) {
-    img.src = "/View5.jpg"; // Overlay image
+    img.src = "assets/View5.jpg"; // Overlay image
   } else {
-    img.src = "/Main-View.jpg"; // Original image
+    img.src = "assets/Main-View.jpg"; // Original image
   }
 
   overlayActive = !overlayActive;
